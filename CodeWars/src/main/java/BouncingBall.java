@@ -17,7 +17,7 @@ Example:
 - h = 3, bounce = 1, window = 1.5, result is -1
 
 (Condition 2) not fulfilled).*/
-
+//My solution
     public static int bouncingBall(double h, double bounce, double window) {
         // your code
         int count=1;
