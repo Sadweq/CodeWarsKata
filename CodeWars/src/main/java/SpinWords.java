@@ -10,8 +10,7 @@
     spinWords( "This is another test" )=> returns "This is rehtona test"
 */
 //My solution
-
-    import java.util.Arrays;
+    
 
     public class SpinWords {
 
