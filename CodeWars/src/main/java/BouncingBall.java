@@ -19,7 +19,7 @@ Example:
 (Condition 2) not fulfilled).*/
 //My solution
     public static int bouncingBall(double h, double bounce, double window) {
-        // your code
+
         int count=1;
         if (h > 0 && (bounce > 0 && bounce < 1) && window < h) {
             h=h*bounce;
