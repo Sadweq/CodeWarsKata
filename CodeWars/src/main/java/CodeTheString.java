@@ -1,6 +1,7 @@
 public class CodeTheString {
 
-    public static String StartCoding(String str){
+
+    public String StartCoding(String str){
         String coded="";
         int count=1;
         String[] SplittedString=str.split("");
@@ -13,13 +14,7 @@ public class CodeTheString {
             }
         }
         coded=coded+count+SplittedString[SplittedString.length-1];
-
-        System.out.println(coded);
-
         return coded;
     }
 
-    public static void main(String[] args) {
-    StartCoding("a");
-    }
 }
