@@ -16,5 +16,4 @@ public class CodeTheString {
         coded=coded+count+SplittedString[SplittedString.length-1];
         return coded;
     }
-
 }
