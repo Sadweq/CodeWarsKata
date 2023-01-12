@@ -1,5 +1,5 @@
 public class CodeTheString {
-
+    /* One of CoderByte Chellenges */
 
     public String StartCoding(String str){
         String coded="";
