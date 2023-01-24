@@ -15,10 +15,37 @@ public class StockPicker {
     Output: 5
             '''*/
     public static int stockPicker(int[] stock){
+        int min=stock[0];
+        int max=stock[1];
+        int minIndex=0;
+        int maxIndex=1;
+        int profit=-1;
+        int biggestProfit=-1;
+        for (int i=1;i<stock.length;i++){
+            if (min>stock[i] && i<stock.length-1){
+                min=stock[i];
+                minIndex=i;
+            }
+            if (max<stock[i]){
+                max=stock[i];
+                maxIndex=i;
+            }
+            if(minIndex>maxIndex && i<stock.length-1){
+             minIndex=i;
+             maxIndex=i+1;
+             min=stock[i];
+             max=stock[i+1];
+            }
+            if(min<max){
+                profit=max-min;
+            }
+            if(biggestProfit<profit){
+                biggestProfit=profit;
+                profit=0;
+            }
+        }
 
-
-
-        return 0;
+        return biggestProfit;
     }
 
 }
